@@ -64,7 +64,7 @@ function App() {
         <div className="App">
             <div className="header">
                 <h1>Основы новых информационных технологий. Лабораторная 1</h1>
-                <p>Тайчер А.Б. ИДБ-21-01</p>
+                <p>Выполнил: Тайчер А.Б. ИДБ-21-01</p>
             </div>
 
             <div className="content">
