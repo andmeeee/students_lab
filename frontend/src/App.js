@@ -23,8 +23,8 @@ function App() {
 
     useEffect(() => {
         fetchStudents();
-        console.log(students); // Временный вывод в консоль
-    }, [fetchStudents]);
+        console.log(students); // Пример использования students
+    }, [fetchStudents, students]); // Добавляем students в зависимости    
 
     
 
