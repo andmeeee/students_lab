@@ -1,0 +1,6 @@
+@new_inf_tech_1_back_HostAddress = http://localhost:5159
+
+GET {{new_inf_tech_1_back_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

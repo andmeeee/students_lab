@@ -1,0 +1,46 @@
+ # Ignore logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Ignore build directories
+/dist
+/build
+/node_modules
+/bin
+/obj
+
+# Ignore .NET files
+*.db
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Ignore Visual Studio Code files
+.vscode/
+
+# Ignore .env files (if you have any for secrets)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Ignore dependency directories for frontend (Node.js)
+frontend/node_modules
+frontend/dist
+
+# Ignore dependency directories for backend (e.g., .NET, if using)
+backend/bin/
+backend/obj/
+
+# Ignore package lock files for Node.js
+package-lock.json
+yarn.lock
+
+# Ignore other temp files
+.DS_Store
+Thumbs.db

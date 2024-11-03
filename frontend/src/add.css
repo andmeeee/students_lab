@@ -1,0 +1,53 @@
+.form {
+    width: 40%;
+    margin: 2%;
+    margin-left: 5%;
+    padding: 15px;
+    padding-top: 0px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.form h4 {
+    font-size: 1.2rem;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 10%;
+}
+
+.string {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.string label {
+    font-size: 0.9rem;
+    width: 40%; /* Контролирует ширину метки */
+    margin-right: 5px;
+}
+
+.string input[type="text"],
+.string input[type="date"] {
+    width: 60%; /* Контролирует ширину поля ввода */
+    padding: 6px;
+    font-size: 0.9rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form button {
+    margin-top: 10px;
+    margin-left: 30%;
+    width: 60%;
+    padding: 8px;
+    font-size: 0.9rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.form button:hover {
+    background-color: #f8f8f8;
+}
