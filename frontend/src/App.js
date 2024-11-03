@@ -17,7 +17,7 @@ function App() {
             setStudents(data);
             setFilteredStudents(data);
         } catch (error) {
-            console.error('Ошибка при загрузке студентов:', error);
+            console.error('Ошибка при загрузке студентов :( :', error);
         }
     };
 
