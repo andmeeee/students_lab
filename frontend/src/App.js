@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useCallback } from 'react';
 import './App.css';
 import StudentList from './StudentList';
 import AddStudentForm from './AddStudentForm';
@@ -9,7 +9,7 @@ function App() {
     const [filteredStudents, setFilteredStudents] = useState([]);
 
     // Функция для загрузки студентов
-    const fetchStudents = async () => {
+    const fetchStudents = useCallback(async () => {
         try {
             const response = await fetch('http://localhost:5159/api/student');
             if (!response.ok) throw new Error(await response.text());
@@ -17,14 +17,16 @@ function App() {
             setStudents(data);
             setFilteredStudents(data);
         } catch (error) {
-            var a = students;
-            console.error('Ошибка при загрузке студентов :( :', error, a);
+            console.error('Ошибка при загрузке студентов:', error);
         }
-    };
+    }, []); // Зависимости пустые, так как эта функция не зависит от других переменных
 
     useEffect(() => {
         fetchStudents();
-    }, []);
+        console.log(students); // Временный вывод в консоль
+    }, [fetchStudents]);
+
+    
 
     // Функция для фильтрации студентов
     const handleFilter = async (filterParams) => {
