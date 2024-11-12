@@ -48,7 +48,6 @@ function App() {
         }
     };
 
-    // Функция для удаления студента
     const handleDeleteStudent = async (studentId) => {
         try {
             const response = await fetch(`http://localhost:5159/api/student/deletestudent/${studentId}`, {
