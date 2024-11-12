@@ -24,7 +24,7 @@ function App() {
     useEffect(() => {
         fetchStudents();
         console.log(students); // Пример использования students
-    }, [fetchStudents, students]); // Добавляем students в зависимости    
+    }, [fetchStudents, students]); 
 
     
 
@@ -44,7 +44,7 @@ function App() {
             const data = await response.json();
             setFilteredStudents(data);
         } catch (error) {
-            console.error('Ошибка при фильтрации студентов:', error);
+            console.error('Ошибка при фильтрации:', error);
         }
     };
 
